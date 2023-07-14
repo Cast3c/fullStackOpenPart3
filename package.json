@@ -1,0 +1,26 @@
+{
+  "name": "fullstackopenpart3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo\"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf build && cd ../fullStackOpen/part2/phonebook/ && npm run build && cp -r build ../../../fullStackOpenPart3",
+    "deploy": "flyctl deploy",
+    "deploy:full": "npm run build:ui && npm run deploy",    
+    "logs:prod": "flyctl logs"
+  },
+  "author": "Castec",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.3.3",
+    "nodemon": "^3.0.1"
+  }
+}
