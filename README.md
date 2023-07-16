@@ -9,3 +9,5 @@ Características principales:
 - Desplegado en Fly.io
 
 https://phonebook-cast3capp.fly.dev/
+
+- conexion a mongo db (mongoDbAtlas) 
