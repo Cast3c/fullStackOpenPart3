@@ -1,0 +1,7 @@
+PUT  http://localhost:3001/api/persons/64b8afd7bbadb1215757a83e
+Content-Type: application/json
+
+{
+    "name": "Oswaldo Castellar",
+    "number": "57-098-765-4321"
+}
